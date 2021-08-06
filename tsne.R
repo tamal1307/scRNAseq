@@ -61,11 +61,11 @@ DimPlot(x1, reduction= 'tsne',
 
 #rename cluster ids####
 #new.cluster.ids <- c('clust0','clust1','clust2', 'clust3',
-                     'clust4', 'clust4', 'clust5', 'clust6',
-                     'clust7','clust8', 'clust9', 'clust10',
-                     'clust11', 'clust12', 'clust13',
-                     'clust14', 'clust15', 'clust16',
-                     'clust17')
+#                     'clust4', 'clust4', 'clust5', 'clust6',
+#                     'clust7','clust8', 'clust9', 'clust10',
+#                     'clust11', 'clust12', 'clust13',
+#                     'clust14', 'clust15', 'clust16',
+#                     'clust17')
 #names(new.cluster.ids) <- levels(x1)
 #x1 <- RenameIdents(x1, new.cluster.ids)
 #levels(x1)
@@ -76,6 +76,7 @@ DimPlot(x1, reduction= 'tsne',
 
 #dims-> corresponds to principal component number
 
+#observe file names
 head(Embeddings(x1, reduction = 'pca')[,1:2])
 
 #creating cells types####
